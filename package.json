@@ -1,0 +1,66 @@
+{
+  "name": "copy-webpack",
+  "version": "0.0.0",
+  "description": "A simple `copy-webpack-plugin`",
+  "license": "MIT",
+  "author": {
+    "name": "Eric Chen",
+    "email": "airkro@qq.com"
+  },
+  "keywords": [
+    "copy",
+    "glob",
+    "plugin",
+    "webpack"
+  ],
+  "homepage": "https://github.com/best-shot/copy-webpack#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/best-shot/copy-webpack.git"
+  },
+  "bugs": {
+    "url": "https://github.com/best-shot/copy-webpack/issues"
+  },
+  "main": "index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "format": "nice-move lint",
+    "test": "ava --verbose"
+  },
+  "dependencies": {
+    "copy-webpack-plugin": "^6.0.3",
+    "deepmerge": "^4.2.2",
+    "schema-utils": "^2.7.0"
+  },
+  "devDependencies": {
+    "@nice-move/cli": "^0.4.1",
+    "@nice-move/eslint-config-base": "^0.3.4",
+    "@nice-move/prettier-config": "^0.2.4",
+    "ava": "^3.11.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-ava": "^10.5.0",
+    "husky": "^4.2.5",
+    "prettier": "^2.0.5",
+    "webpack": "^4.44.1"
+  },
+  "peerDependencies": {
+    "webpack": "^4.37.0"
+  },
+  "engines": {
+    "node": "^10.18 || >=12.14"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@nice-move/eslint-config-base",
+      "plugin:ava/recommended"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "nice-move lint"
+    }
+  },
+  "prettier": "@nice-move/prettier-config"
+}
