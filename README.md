@@ -5,6 +5,7 @@ A simple [copy-webpack-plugin].
 [![npm][npm-badge]][npm-url]
 [![license][license-badge]][github-url]
 ![node][node-badge]
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fbest-shot%2Fcopy-webpack.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fbest-shot%2Fcopy-webpack?ref=badge_shield)
 
 ## Installation
 
@@ -75,3 +76,7 @@ Glob or path from where we copy files.
 [github-url]: https://github.com/best-shot/copy-webpack
 [node-badge]: https://img.shields.io/node/v/copy-webpack.svg?style=flat-square&colorB=green&logo=node.js
 [license-badge]: https://img.shields.io/npm/l/copy-webpack.svg?style=flat-square&colorB=blue&logo=github
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fbest-shot%2Fcopy-webpack.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fbest-shot%2Fcopy-webpack?ref=badge_large)
