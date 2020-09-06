@@ -12,7 +12,9 @@ jobs:
         site:
           - https://cnpmjs.org
           - https://npm.taobao.org
+        package:
+          - copy-webpack
     runs-on: macos-latest
     steps:
       - name: request
-        run: curl -X PUT ${{ matrix.site }}/sync/copy-webpack?sync_upstream=true
+        run: curl -X PUT ${{ matrix.site }}/sync/${{ matrix.package }}?sync_upstream=true

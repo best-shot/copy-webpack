@@ -1,6 +1,6 @@
 {
   "name": "copy-webpack",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A simple `copy-webpack-plugin`",
   "license": "MIT",
   "author": {
@@ -13,10 +13,10 @@
     "plugin",
     "webpack"
   ],
-  "homepage": "https://github.com/best-shot/copy-webpack#readme",
+  "homepage": "https://github.com/best-shot/copy-webpack",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/best-shot/copy-webpack.git"
+    "url": "https://github.com/best-shot/copy-webpack.git"
   },
   "bugs": {
     "url": "https://github.com/best-shot/copy-webpack/issues"
@@ -30,23 +30,23 @@
     "test": "ava --verbose"
   },
   "dependencies": {
-    "copy-webpack-plugin": "^6.0.3",
+    "copy-webpack-plugin": "^6.1.0",
     "deepmerge": "^4.2.2",
-    "schema-utils": "^2.7.0"
+    "schema-utils": "^2.7.1"
   },
   "devDependencies": {
-    "@nice-move/cli": "^0.4.1",
-    "@nice-move/eslint-config-base": "^0.3.4",
-    "@nice-move/prettier-config": "^0.2.4",
-    "ava": "^3.11.0",
+    "@nice-move/cli": "^0.4.8",
+    "@nice-move/eslint-config-base": "^0.3.9",
+    "@nice-move/prettier-config": "^0.3.2",
+    "ava": "^3.12.1",
     "eslint": "^6.8.0",
     "eslint-plugin-ava": "^10.5.0",
     "husky": "^4.2.5",
-    "prettier": "^2.0.5",
+    "prettier": "^2.1.1",
     "webpack": "^4.44.1"
   },
   "peerDependencies": {
-    "webpack": "^4.37.0"
+    "webpack": "^4.44.1"
   },
   "engines": {
     "node": "^10.18 || >=12.14"

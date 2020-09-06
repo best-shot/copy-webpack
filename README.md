@@ -3,8 +3,15 @@
 A simple [copy-webpack-plugin].
 
 [![npm][npm-badge]][npm-url]
-[![license][license-badge]][github-url]
+[![github][github-badge]][github-url]
 ![node][node-badge]
+
+[copy-webpack-plugin]: https://github.com/webpack-contrib/copy-webpack-plugin
+[npm-url]: https://www.npmjs.com/package/copy-webpack
+[npm-badge]: https://img.shields.io/npm/v/copy-webpack.svg?style=flat-square&logo=npm
+[github-url]: https://github.com/best-shot/copy-webpack
+[github-badge]: https://img.shields.io/npm/l/copy-webpack.svg?style=flat-square&colorB=blue&logo=github
+[node-badge]: https://img.shields.io/node/v/copy-webpack.svg?style=flat-square&colorB=green&logo=node.js
 
 ## Installation
 
@@ -68,10 +75,3 @@ Glob or path from where we copy files.
 +   }
 + ]);
 ```
-
-[copy-webpack-plugin]: https://github.com/webpack-contrib/copy-webpack-plugin
-[npm-url]: https://www.npmjs.com/package/copy-webpack
-[npm-badge]: https://img.shields.io/npm/v/copy-webpack.svg?style=flat-square&logo=npm
-[github-url]: https://github.com/best-shot/copy-webpack
-[node-badge]: https://img.shields.io/node/v/copy-webpack.svg?style=flat-square&colorB=green&logo=node.js
-[license-badge]: https://img.shields.io/npm/l/copy-webpack.svg?style=flat-square&colorB=blue&logo=github
