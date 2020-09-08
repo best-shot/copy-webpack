@@ -44,7 +44,6 @@ Glob or path from where we copy files.
 -       cacheTransform: compiler.options.cache,
 -       globOptions: {
 -         dot: true,
--         gitignore: true,
 -         ignore: ['.gitkeep']
 -       }
 -     }
@@ -62,7 +61,6 @@ Glob or path from where we copy files.
 -       noErrorOnMissing: true,
 -       globOptions: {
 -         dot: true,
--         gitignore: true,
 -         ignore: ['.gitkeep']
 -       }
 -     }

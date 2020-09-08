@@ -28,7 +28,6 @@ test('single', (t) => {
       from: 'static',
       globOptions: {
         dot: true,
-        gitignore: true,
         ignore: ['.gitkeep'],
       },
     },
@@ -55,7 +54,6 @@ test('multiple', (t) => {
         from: 'static',
         globOptions: {
           dot: true,
-          gitignore: true,
           ignore: ['.gitkeep'],
         },
       },
@@ -65,7 +63,6 @@ test('multiple', (t) => {
         noErrorOnMissing: true,
         globOptions: {
           dot: false,
-          gitignore: true,
           ignore: ['.gitkeep'],
         },
       },
