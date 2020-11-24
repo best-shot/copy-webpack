@@ -1,11 +1,11 @@
 const CopyPlugin = require('copy-webpack-plugin');
 
 const { parse } = require('./lib/parse');
-const { validator } = require('./lib/schema');
+const { validate } = require('./lib/schema');
 
 class CopyWebpack {
   constructor(options = []) {
-    validator(options);
+    validate(options);
     this.options = options;
   }
 
