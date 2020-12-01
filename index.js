@@ -12,7 +12,7 @@ class CopyWebpack {
   apply(compiler) {
     const plugin = new CopyPlugin({
       patterns: parse({
-        cache: compiler.options.cache || false,
+        cache: !!compiler.options.cache || false,
         options: this.options,
       }),
     });
