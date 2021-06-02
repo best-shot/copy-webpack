@@ -1,7 +1,7 @@
 const CopyPlugin = require('copy-webpack-plugin');
 
-const { parse } = require('./lib/parse');
-const { validate } = require('./lib/schema');
+const { parse } = require('./lib/parse.cjs');
+const { validate } = require('./lib/schema.cjs');
 
 class CopyWebpack {
   constructor(options = []) {
@@ -11,10 +11,7 @@ class CopyWebpack {
 
   apply(compiler) {
     const plugin = new CopyPlugin({
-      patterns: parse({
-        cache: !!compiler.options.cache || false,
-        options: this.options,
-      }),
+      patterns: parse(this.options),
     });
 
     plugin.apply(compiler);

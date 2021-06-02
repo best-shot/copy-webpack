@@ -41,7 +41,6 @@ Glob or path from where we copy files.
 -   patterns: [
 -     {
 -       from: 'static',
--       cacheTransform: compiler.options.cache,
 -       globOptions: {
 -         dot: true,
 -         ignore: ['.gitkeep']
@@ -57,7 +56,6 @@ Glob or path from where we copy files.
 -   patterns: [
 -     {
 -       from: 'extra',
--       cacheTransform: compiler.options.cache,
 -       noErrorOnMissing: true,
 -       globOptions: {
 -         dot: true,
