@@ -21,8 +21,8 @@ npm install copy-webpack --save-dev
 
 ## Usage
 
-```js
-// example: webpack.config.js
+```cjs
+// example: webpack.config.cjs
 const { CopyWebpack } = require('copy-webpack');
 
 module.exports = {

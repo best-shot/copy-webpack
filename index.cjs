@@ -1,3 +1,5 @@
+'use strict';
+
 const CopyPlugin = require('copy-webpack-plugin');
 
 const { parse } = require('./lib/parse.cjs');
