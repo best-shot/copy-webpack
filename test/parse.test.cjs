@@ -1,7 +1,7 @@
 'use strict';
 
+// eslint-disable-next-line import/no-unresolved
 const test = require('ava');
-
 const { parse } = require('../lib/parse.cjs');
 
 test('types', (t) => {
