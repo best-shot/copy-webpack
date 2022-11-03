@@ -1,8 +1,6 @@
-'use strict';
+import test from 'ava';
 
-// eslint-disable-next-line import/no-unresolved
-const test = require('ava');
-const { parse } = require('../lib/parse.cjs');
+import { parse } from '../lib/parse.cjs';
 
 test('types', (t) => {
   t.deepEqual(parse('extra'), parse({ from: 'extra' }));
