@@ -10,20 +10,11 @@ test('types', (t) => {
 });
 
 test('single', (t) => {
-  t.deepEqual(parse('static'), [
-    {
-      from: 'static',
-      globOptions: {
-        dot: true,
-        gitignore: true,
-        ignore: ['.gitkeep', '.{cache,git,svn}/**'],
-      },
-    },
-  ]);
+  t.snapshot(parse('static'));
 });
 
 test('multiple', (t) => {
-  t.deepEqual(
+  t.snapshot(
     parse([
       'static',
       {
@@ -34,24 +25,14 @@ test('multiple', (t) => {
         },
       },
     ]),
-    [
-      {
-        from: 'static',
-        globOptions: {
-          dot: true,
-          gitignore: true,
-          ignore: ['.gitkeep', '.{cache,git,svn}/**'],
-        },
-      },
-      {
-        from: 'extra',
-        noErrorOnMissing: true,
-        globOptions: {
-          dot: false,
-          gitignore: true,
-          ignore: ['.gitkeep', '.{cache,git,svn}/**'],
-        },
-      },
-    ],
+  );
+});
+
+test('hashabng', (t) => {
+  t.snapshot(
+    parse({
+      from: 'cli.mjs',
+      hashbang: true,
+    }),
   );
 });
