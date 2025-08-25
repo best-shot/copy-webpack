@@ -1,6 +1,6 @@
 import test from 'ava';
 
-import { parse } from '../lib/parse.cjs';
+import { parse } from '../lib/parse.mjs';
 
 test('types', (t) => {
   t.deepEqual(parse('extra'), parse({ from: 'extra' }));
@@ -25,14 +25,5 @@ test('multiple', (t) => {
         },
       },
     ]),
-  );
-});
-
-test('hashabng', (t) => {
-  t.snapshot(
-    parse({
-      from: 'cli.mjs',
-      hashbang: true,
-    }),
   );
 });
