@@ -1,3 +1,3 @@
-import base from '@all-star/base/eslint';
+import base from '@nice-move/all-in-base/eslint';
 
 export default [...base];

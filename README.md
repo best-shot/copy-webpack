@@ -21,11 +21,11 @@ npm install copy-webpack --save-dev
 
 ## Usage
 
-```cjs
-// example: webpack.config.cjs
-const { CopyWebpack } = require('copy-webpack');
+```mjs
+// example: webpack.config.mjs
+import { CopyWebpack } from 'copy-webpack';
 
-module.exports = {
+export default {
   plugins: [new CopyWebpack('static')]
 };
 ```

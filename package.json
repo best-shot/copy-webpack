@@ -1,6 +1,6 @@
 {
   "name": "copy-webpack",
-  "version": "5.0.2",
+  "version": "5.0.4",
   "description": "A simple `copy-webpack-plugin`",
   "license": "MIT",
   "author": {
