@@ -1,6 +1,6 @@
 {
   "name": "copy-webpack",
-  "version": "5.0.0",
+  "version": "5.0.2",
   "description": "A simple `copy-webpack-plugin`",
   "license": "MIT",
   "author": {
@@ -15,15 +15,16 @@
   "homepage": "https://github.com/best-shot/copy-webpack",
   "repository": {
     "type": "git",
-    "url": "https://github.com/best-shot/copy-webpack.git"
+    "url": "git+https://github.com/best-shot/copy-webpack.git"
   },
   "bugs": {
     "url": "https://github.com/best-shot/copy-webpack/issues"
   },
-  "main": "lib/index.cjs",
+  "main": "lib/index.mjs",
   "files": [
     "lib"
   ],
+  "type": "module",
   "scripts": {
     "lint:staged": "nice-move lint staged",
     "prepare": "nice-move git hooks",
