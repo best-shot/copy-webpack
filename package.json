@@ -1,6 +1,6 @@
 {
   "name": "copy-webpack",
-  "version": "5.0.4",
+  "version": "6.0.0",
   "description": "A simple `copy-webpack-plugin`",
   "license": "MIT",
   "author": {
@@ -36,9 +36,10 @@
     "test": "ava --fail-fast"
   },
   "dependencies": {
-    "copy-webpack-plugin": "^12.0.2",
+    "copy-webpack-plugin": "^14.0.0",
     "deepmerge": "^4.3.1",
-    "schema-utils": "^4.3.3"
+    "schema-utils": "^4.3.3",
+    "tinyglobby": "^0.2.16"
   },
   "devDependencies": {
     "@bring-it/npm": "^0.9.3",

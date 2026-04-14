@@ -1,6 +1,7 @@
 import type { ObjectPattern, Pattern } from 'copy-webpack-plugin';
 
 import deepmerge from 'deepmerge';
+import { readGitignorePatterns } from './ignore.mts';
 
 export type Configs = Pattern | Pattern[];
 
@@ -24,13 +25,11 @@ const ignore = [
   '**/sshd*config',
 ];
 
-const globOptions: ObjectPattern['globOptions'] = {
-  dot: true,
-  gitignore: true,
-  ignore,
-};
-
-export function parse(options: Configs): Pattern[] {
+export function parse(options: Configs, cwd = process.cwd()): Pattern[] {
+  const globOptions: ObjectPattern['globOptions'] = {
+    dot: true,
+    ignore: [...ignore, ...readGitignorePatterns(cwd)],
+  };
   return toArray(options).map((from) =>
     deepmerge({ globOptions } as ObjectPattern, stringOrObject(from)),
   );

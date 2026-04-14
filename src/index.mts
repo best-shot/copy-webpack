@@ -1,4 +1,3 @@
-// eslint-disable-next-line import-x/default
 import CopyPlugin from 'copy-webpack-plugin';
 import { parse } from './parse.mts';
 import { validate } from './schema.mts';
