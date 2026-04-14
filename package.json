@@ -26,11 +26,12 @@
   ],
   "type": "module",
   "scripts": {
+    "build": "tsc -p tsconfig.build.json",
     "lint:eslint": "eslint . --quiet --fix --concurrency=auto",
     "lint:staged": "nice-move lint staged",
     "lint:type": "tsc -p tsconfig.json",
     "prepare": "nice-move git hooks",
-    "prepublishOnly": "pnpm run lint:staged && pnpm run lint:type && pnpm test",
+    "prepublishOnly": "pnpm run lint:staged && pnpm run lint:type && pnpm test && pnpm build",
     "snapshot": "ava --fail-fast -u",
     "test": "ava --fail-fast"
   },
@@ -53,8 +54,8 @@
   },
   "packageManager": "pnpm@10.33.0",
   "engines": {
-    "node": ">=22.0.0",
-    "pnpm": "^10.31.0"
+    "node": ">=24.0.0",
+    "pnpm": "^10.33.0"
   },
   "publishConfig": {
     "access": "public",

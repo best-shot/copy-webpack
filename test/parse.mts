@@ -1,6 +1,6 @@
 import test from 'ava';
 
-import { parse } from '../lib/parse.mjs';
+import { parse } from '../src/parse.mts';
 
 test('types', (t) => {
   t.deepEqual(parse('extra'), parse({ from: 'extra' }));

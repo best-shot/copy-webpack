@@ -1,15 +1,20 @@
 // eslint-disable-next-line import-x/default
 import CopyPlugin from 'copy-webpack-plugin';
-import { parse } from './parse.mjs';
-import { validate } from './schema.mjs';
+import { parse } from './parse.mts';
+import { validate } from './schema.mts';
+
+import type { Compiler } from 'webpack';
+import type { Configs } from './parse.mts';
 
 export class CopyWebpack {
-  constructor(options = []) {
+  options: Configs;
+
+  constructor(options: Configs = []) {
     validate(options);
     this.options = options;
   }
 
-  apply(compiler) {
+  apply(compiler: Compiler) {
     const plugin = new CopyPlugin({
       patterns: parse(this.options),
     });
